@@ -1,0 +1,51 @@
+body {
+    background: url("../components/images/6078638.jpg");
+    background-size: cover;
+}
+
+input {
+    padding: 15px;
+    margin: 0px 0px;
+    border-radius: 10px;
+    width: 400px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+}
+
+input:invalid[focused="true"] ~ span {
+    display: block;
+}
+
+input:invalid[focused="true"] {
+    border: solid 2px #D61C4E;
+    opacity: 0.6;
+}
+
+input::placeholder {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.form-inputs {
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-inputs label {
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 6px;
+    font-weight: 400;
+}
+
+form {
+    max-width: 400px;
+}
+
+span {
+    color: #00D7FF;
+    font-size: 14px;
+    display: none;
+}
